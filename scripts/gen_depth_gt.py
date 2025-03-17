@@ -104,7 +104,7 @@ def worker(info):
 
 
 if __name__ == '__main__':
-    po = Pool(24)
+    po = Pool(16)
     mmcv.mkdir_or_exist(os.path.join(data_root, 'depth_gt'))
     for info_path in INFO_PATHS:
         infos = mmcv.load(info_path)
